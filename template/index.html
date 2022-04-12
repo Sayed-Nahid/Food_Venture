@@ -11,30 +11,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Home</title>
+    <link rel="shortcut icon" type="img/png" href="{%static 'img/fav.png'%}">
   </head>
   <body>
     <!--navigation start-->
           <div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
               <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="">𝐹🍩🍪𝒹 𝒱𝑒𝓃𝓉𝓊𝓇𝑒</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                  <a class="navbar-brand" href="">Food Venture</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="">Home</a>
+                      <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/order">Order</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="/about">About</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/dev_info">Developer Info</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/contact">Contact</a>
-                    </li>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/dev_info">Developer Info</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                  </li>
+                    
                   </ul>
                   <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -49,39 +55,249 @@
 
 
 
-      <!-- Carousel Start
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <!-- Carousel Start-->
+      <div class="container my-2">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://source.unsplash.com/random/1000x400/?food" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5><b>Order Now</b></h5>
+                <p><b>Get Your Food in Less Than an Hour With Food Venture.</b></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://source.unsplash.com/random/1000x400/?healty food" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5><b>Order Now</b></h5>
+                <p>Get Your Food in Less Than an Hour With Food Venture.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://source.unsplash.com/random/1000x400/?fast food" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5><b>Order Now</b></h5>
+                <p><b>Get Your Food in Less Than an Hour With Food Venture.</b></p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="{% static caro1.png%} " class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-      <!--Carousel End-->
+    <!--Carousel End-->
+
+
+    <!--Show iteam start-->
+
+    <div class="container my-2">
+      <div>
+        <main>
+            <section class="py-5 text-center container">
+              <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                  <h1 class="fw-light">𝐹🍩🍪𝒹 𝒱𝑒𝓃𝓉𝓊𝓇𝑒</h1>
+                  <p class="lead text-muted">Get Your Food in Less Than an Hour With Food Venture.This is the best way to indulge anyone on the Birthday, Wedding, Anniversary, Valentine's Day in Bangladesh.<p>
+                    <a href="#" class="btn btn-primary my-2">DELIVERY</a>
+                    <a href="#" class="btn primary my-2">or</a>
+                    <a href="#" class="btn btn-secondary my-2">PICK UP</a>
+                  </p>
+                </div>
+              </div>
+            </section>
+          
+            <div class="album py-5 bg-light">
+              <div class="container">
+          
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                  <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="{%static 'img/order/kachchi.png'%}" class="card-img-top" alt="...">
+          
+                      <div class="card-body">
+                        <p class="card-text"style = Font-family:calibari;color:crimson><b>Kachchi Biriani</b></p>
+                        <p class="card-text">This food gift package is suitable for 3 people, and delivery in Dhaka is available for Lunch (1pm-4pm) or Dinner (5pm-9pm) time.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-primary"><a href="/order">Buy Now</a></button>
+                            <button type="button" class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                          </div>
+                          <small class="text-muted">৳3085.00</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="{%static 'img/order/chikenroast.png'%}" class="card-img-top" alt="...">
+          
+                      <div class="card-body">
+                        <p class="card-text"style = Font-family:calibari;color:crimson><b>Chiken Roast</b></p>
+                        <p class="card-text">Add chicken roast with your order. Price is shown for 1 serve of chicken roast, please increase the quantity if you want to order more (2,3 .. serves).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-primary"><a href="/order">Buy Now</a></button>
+                            <button type="button" class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                          </div>
+                          <small class="text-muted">৳280.00</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="{%static 'img/order/firni.png'%}" class="card-img-top" alt="...">
+          
+                      <div class="card-body">
+                        <p class="card-text"style = Font-family:calibari;color:crimson><b>Firni</b></p>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-primary"><a href="/order">Buy Now</a></button>
+                            <button type="button" class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                          </div>
+                          <small class="text-muted">৳79.57</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="{%static 'img/order/nega.jpg'%}" class="card-img-top" alt="...">
+          
+                      <div class="card-body">
+                        <p class="card-text"style = Font-family:calibari;color:crimson><b>Naga Blast</b></p>
+                        <p class="card-text">The spiciest burger in town - Naga Blast by MADCHEF. Each burger has beef patty drenched Mad Chef's home made hot Naga sauce and a layer of chedder cheese. Its super spicy!</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-primary"><a href="/order">Buy Now</a></button>
+                            <button type="button" class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                          </div>
+                          <small class="text-muted">৳279.57</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="{%static 'img/order/special burgur.png'%}" class="card-img-top" alt="...">
+          
+                      <div class="card-body">
+                        <p class="card-text"style = Font-family:calibari;color:crimson><b>Chefs Special</b></p>
+                        <p class="card-text">Beef cheese delight is a burger with double beef patties stuffed with melted cheddar cheese. This package is suitable for up to three people. You may increase the number of people to increase number of burger, fries and drinks.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-primary"><a href="/order">Buy Now</a></button>
+                            <button type="button" class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                          </div>
+                          <small class="text-muted">৳250.57</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="{%static 'img/order/burger.png'%}" class="card-img-top" alt="...">
+          
+                      <div class="card-body">
+                        <p class="card-text"style = Font-family:calibari;color:crimson><b>Crispy burger</b></p>
+                        <p class="card-text">Order online and send this crispy chicken burger with mayo sauce to your friends and family in Dhaka.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-primary"><a href="/order">Buy Now</a></button>
+                            <button type="button" class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                          </div>
+                          <small class="text-muted">৳275.57</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="{%static 'img/order/khajur.jpg'%}" class="card-img-top" alt="...">
+          
+                      <div class="card-body">
+                        <p class="card-text"style = Font-family:calibari;color:crimson><b>Basket Of Delicious Dates</b></p>
+                        <p class="card-text">Dates are full of nutrition, high in calories particularly carbohydrates. It also contains several essential vitamins and minerals with fibres. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-primary"><a href="/order">Buy Now</a></button>
+                            <button type="button" class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                          </div>
+                          <small class="text-muted">৳500.57</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="{%static 'img/order/iftar1.png'%}" class="card-img-top" alt="...">
+          
+                      <div class="card-body">
+                        <p class="card-text"style = Font-family:calibari;color:crimson><b>Ramadan Iftar Package 1</b></p>
+                        <p class="card-text">Say ‘Ramadan Mubarak’ with this wonderful ramadan gift package. Order online and send Iftar items to your family, friends and relatives during this Ramadan. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-primary"><a href="/order">Buy Now</a></button>
+                            <button type="button" class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                          </div>
+                          <small class="text-muted">৳1500.57</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="{%static 'img/order/halim.png'%}" class="card-img-top" alt="...">
+          
+                      <div class="card-body">
+                        <p class="card-text" style = Font-family:calibari;color:crimson><b>Beef Halim</b></p>
+                        <p class="card-text"> Add this item with you preferred iftar package. Price is shown for 1 large bowl of beef haleem which can be sufficient for up to 5 people.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-primary"><a href="/order">Buy Now</a></button>
+                            <button type="button" class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                          </div>
+                          <small class="text-muted">৳900.00</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+    </div>
+    </div>
 
 
 
 
+    <!--show iteam end-->
 
+    <!--Footer start-->
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+          <p class="mb-1">&copy; 2021-2022 Food Venture</p>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+          </ul>
+        </footer>
+    <!--Footer End-->
 
 
 

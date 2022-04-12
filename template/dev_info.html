@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,30 +10,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Developer Infomation</title>
+    <link rel="shortcut icon" type="img/png" href="{%static 'img/fav.png'%}">
   </head>
   <body>
         <!--navigation start-->
         <div>
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="">𝐹🍩🍪𝒹 𝒱𝑒𝓃𝓉𝓊𝓇𝑒</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="">Food Venture</a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="/">Home</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="/order">Order</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="/about">About</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="">Developer Info</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
-                  </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/">Developer Info</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact</a>
+                </li>
+                  
                 </ul>
                 <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -48,19 +55,58 @@
     <!--Card start-->
     <div class="card-group">
       <div class="card">
-        <img src="..static/caro1.png" class="card-img-top" alt="...">
+        <img class="card-img-top" src="{%static 'img/dev2.png'%}" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h5 class="card-title">Sayed Nahid</h5>
+          <p class="card-text">Hi! i am Sayed Nahid. To learn more about me please click the button below.</p>
+        </div>
+        <!--about button Nahid start-->
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              Sayed Nahid
+            </button>
+            
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Sayed Nahid</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div>
+                  <img class="card-img-top" src="{%static 'img/dev2.png'%}" alt="Card image cap">
+                  Hi! i am Sayed Nahid. I am a software engineer. I know c, c++, java, python, Django framework. I am studying in Department of Computer science and Engineering at Daffodil International University. This project is our team project. Thank you for visiting.
+                </div>
+                
+              </div>
+            </div>
+        <!--about buttton Nahid end-->
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 days ago</small>
         </div>
       </div>
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img class="card-img-top" src="{%static 'img/dev1.png'%}" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h5 class="card-title">Khairul islam Ope</h5>
+          <p class="card-text">Hi! i am Khairul islam Ope. To learn more about me please click the button below.</p>
+        </div>
+        <!--about Ope start-->
+              <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Khairul islam Ope</button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel">Khairul islam Ope</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <img class="card-img-top" src="{%static 'img/dev1.png'%}" alt="Card image cap">
+                    Hi! i am Sayed Nahid. I am a software engineer. I know c, c++, java, python, Django framework. I am studying in Department of Computer science and Engineering at Daffodil International University. This project is our team project. Thank you for visiting.
+                  </div>
+                </div>
+              </div>
+        <!--about Ope end-->
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 days ago</small>
         </div>
       </div>
       
@@ -68,19 +114,27 @@
 
 
 
-
-
-
-
     
     <!--Card end-->
 
 
+    <!--offcanvas start-->
+
+      
+    <!--offcanvas end-->
 
 
 
-
-
+    <!--Footer start-->
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2021-2022 Food Venture</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+<!--Footer End-->
 
 
 

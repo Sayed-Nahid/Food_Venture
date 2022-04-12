@@ -15,16 +15,19 @@ def dev_info(request):
 def about(request):
     return render(request, 'about.html')
 
+def order(request):
+    return render(request,'order.html')
+
 
 def contact(request):
     if request.method == 'POST':
         contact = Contact()
         name = request.POST.get('name')
         email = request.POST.get('email')
-        message = request.POST.get('message')
+        comments = request.POST.get('comments')
         contact.name=name
         contact.email=email
-        contact.message=message
+        contact.comments = comments
         contact.save()
         return HttpResponse('<h1>Thanks for Contract with us</h1>')
     return render(request, 'contact.html')
@@ -32,3 +35,8 @@ def showdata(request):
     data = Contact.objects.all()
     print(data)
     return render(request, 'showdata.html', {'Contact': data})
+
+def orderdata(request):
+    data = order.object.all()
+    print(data)
+    return render(request, 'orderdata.html', {'order': data})
